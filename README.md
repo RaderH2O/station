@@ -1,5 +1,5 @@
-### Station
-## Usage
+## Station
+# Usage
 ```
 ./station addloc /home/user/Desktop/
 ```
@@ -25,7 +25,7 @@ Deletes the file "filename" located in the location with the ID 1 (the first loc
 ```
 Copies the file "filename" to the location with the ID 1 (the first location)
 
-## Installation
+# Installation
 
 Either use `cabal` to build :
 ```
