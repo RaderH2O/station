@@ -8,7 +8,7 @@ import CopyStation.HelperFunctions
       addlocFromList,
       rmlocFromList )
 
-associations :: [(String, ([String] -> IO ()))]
+associations :: [(String, [String] -> IO ())]
 associations = [ ("cp", copyFromList)
                , ("list", listLocations)
                , ("rm", removeFromList)
@@ -21,4 +21,4 @@ main :: IO ()
 main = do
         args <- getArgs
         locs <- getLocations
-        fromJust $ lookup (head args) associations <*> (Just $ tail args)
+        fromJust $ lookup (head args) associations <*> Just (tail args)
